@@ -10,6 +10,16 @@ import xbmcvfs
 import traceback
 import cookielib
 import base64
+#mensagem BrazucaPlay
+__addon__ = xbmcaddon.Addon()
+__addonname__ = __addon__.getAddonInfo('name')
+__icon__ = __addon__.getAddonInfo('icon')
+
+ 
+msg = ("https://pastebin.com/raw/hi6LE0QE") 
+line1 = urllib2.urlopen(msg).read()
+time = 10000 #in miliseconds
+xbmc.executebuiltin('Notification(%s, %s, %d, %s)'%(__addonname__,line1, time, __icon__))
 from BeautifulSoup import BeautifulStoneSoup, BeautifulSoup, BeautifulSOAP
 viewmode=None
 try:
