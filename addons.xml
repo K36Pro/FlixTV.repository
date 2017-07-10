@@ -5,10 +5,10 @@ name="[B][COLOR white]BRAZUCA PLAY[/COLOR][/B]"
 version="[B][COLOR white]1.7[/COLOR][/B]"
 provider-name="[B][COLOR white]Lucas Cardoso[/COLOR][/B]">
 <requires>
-<import addon="xbmc.python" version="2.20.0"/>
+<import addon="xbmc.python" version="2.25.0"/>
 <import addon="script.module.t0mm0.common" version="2.1.1"/>
 <import addon="script.module.beautifulsoup" version="3.2.1"/>
-<import addon="script.module.beautifulsoup4" version="4.3.2"/>
+<import addon="script.module.beautifulsoup4" version="4.5.3"/>
 <import addon="script.module.simple.downloader" version="1.9.5"/>
 <import addon="script.module.requests" version="2.12.4"/>
 <import addon="script.module.httplib2" version="0.8.0"/>
