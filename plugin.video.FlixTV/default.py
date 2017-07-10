@@ -75,6 +75,7 @@ def CHIndex():
 #    addDir('[COLOR red] • [COLOR white]brstuga[/COLOR] ',CHBase1,54,'https://copy.com/myEaTELQ8aomsfeR' ,  FANART,'','','','')
     getData(CHBase,'')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
+	
 def get_data_listas(url):
     getData(url,'')
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
@@ -87,23 +88,7 @@ def addon_log(string):
 def makeRequest(url, headers=None):
         try:
             if headers is None:
-                headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'}
-                
-            if '|' in url:
-                url,header_in_page=url.split('|')
-                header_in_page=header_in_page.split('&')
-                
-                for h in header_in_page:
-                    if len(h.split('='))==2:
-                        n,v=h.split('=')
-                    else:
-                        vals=h.split('=')
-                        n=vals[0]
-                        v='='.join(vals[1:])
-                        #n,v=h.split('=')
-                    print n,v
-                    headers[n]=v
-                    
+                headers = {'User-agent' : 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0'}
             req = urllib2.Request(url,None,headers)
             response = urllib2.urlopen(req)
             data = response.read()
