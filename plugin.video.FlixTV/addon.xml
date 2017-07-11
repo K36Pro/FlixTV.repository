@@ -1,45 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.FlixTV"
-       name="FlixTV"
-       version="0.8.3"
-       provider-name="K36Pro">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />    
-     <import addon="script.module.livestreamer" optional="true"/>
-     <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-
-  <extension point="xbmc.addon.metadata">
-    <summary>FlixTV- shamelessly forked from livestreams but added many thinks</summary>
-    <description>
-        In addition to what livestreams allowed you to do, you can now,
-        1. call regex in regex,
-        2. multiple regex in page, regex in session, also htmlunescape responses
-        3. create session from one regex and pass onto next in line
-        4. save sessions to a file and open again later
-        5. write python code in .py file, put in the profile directory and then call from your regex.
-        6. use epoctime, guid and unpack as functions already defined.
-        7. Use it to post values to the pages to get the proper responses
-        8. support many headers, like origin, X-Requested-With
-        9. you can now append cookies in response and then read in regex using includeheaders
-        10. You can now link to another web url via your xml using externallink
-        11. support for google captcha, now you can show and then post the text
-        
-    </description>
-    <platform>all</platform>
-  </extension>
+name="[B][COLOR white]FLIX[/COLOR]COLOR gold]TV[/COLOR][/B]"
+version="[B][COLOR white]0.8.4[/COLOR][/B]"
+provider-name="[B][COLOR white]K36PRO[/COLOR][/B]">
+<requires>
+<import addon="xbmc.python" version="2.25.0"/>
+<import addon="script.module.t0mm0.common" version="2.1.1"/>
+<import addon="script.module.beautifulsoup" version="3.2.1"/>
+<import addon="script.module.beautifulsoup4" version="4.5.3"/>
+<import addon="script.module.simple.downloader" version="1.9.5"/>
+<import addon="script.module.requests" version="2.12.4"/>
+<import addon="script.module.httplib2" version="0.8.0"/>
+<import addon="script.module.urlresolver" optional="true"/>
+<import addon="script.module.simplejson" version="3.3.0"/>
+<import addon="script.common.plugin.cache" version="2.5.8"/>
+<import addon="script.module.metahandler" version="2.9.0"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="default.py">
+<provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary>[B][COLOR white]TV, Filmes, Séries, Desenhos e Animes.[/COLOR]</summary>
+<description lang="pt">[B][COLOR white]FlixTV é apenas um AGREGADOR de links e, assim como o Google.com, apenas agrega e organiza os links externos. Não somos responsáveis pelos arquivos aqui encontrados.[/COLOR][/B]</description>
+<disclaimer lang="en">[B][COLOR white]DOAÇÕES MANTEM O ADDON ATUALIZADO > DOAÇÕES: [/COLOR][COLOR gold]BIT.LY/DOARPLAY[/COLOR][/B]</disclaimer>
+<platform>all</platform>
+<assets>
+<icon>icon.png</icon>
+<fanart>fanart.png</fanart>
+<screenshot>resources/screenshots/home.png</screenshot>
+<screenshot>resources/screenshots/movies.png</screenshot>
+<screenshot>resources/screenshots/series.png</screenshot>
+</assets>
+</extension>
 </addon>
