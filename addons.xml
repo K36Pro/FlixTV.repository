@@ -53,7 +53,7 @@ provider-name="[B][COLOR white]Lucas Cardoso[/COLOR][/B]">
 </addon>
 
 <addon id="plugin.video.FlixTV"
-name="[B][COLOR white]FLIX[/COLOR]COLOR gold]TV[/COLOR][/B]"
+name="[B][COLOR white]FLIX[/COLOR][COLOR gold]TV[/COLOR][/B]"
 version="[B][COLOR white]0.8.4[/COLOR][/B]"
 provider-name="[B][COLOR white]K36PRO[/COLOR][/B]">
 <requires>
